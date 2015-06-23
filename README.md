@@ -4,8 +4,6 @@
 1. [Releases](#releases)
 1. [Helpful Resources](#helpful-resources)
 
-#### ** DO NOT MERGE SOLUTION PULL REQUESTS INTO THIS REPOSITORY **
-
 ## Learning Objectives
 1. Use Jasmine to TDD JavaScript code.
 1. Understand basic JavaScript - functions, control structures, scope.
@@ -14,9 +12,6 @@
 1. Use jQuery to display and manipulate JavaScript Objects in the DOM.
 
 ## Summary
-Remember our old friend **Orange Trees** from Ruby? Let's revisit it in
-JavaScript.
-
 Start your test server by running `rake jasmine`
 
 Here are some features:
