@@ -1,4 +1,8 @@
-function createTree() {
-    console.log('create a tree!');
-    return {};
+function createTree(){
+	console.log('shit');
+	
+	return {
+		age: 0
+	}
 }
+

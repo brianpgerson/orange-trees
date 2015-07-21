@@ -1,9 +1,9 @@
 describe ("createTree", function(){
-  it("should return a tree object", function(){
+  it("should be defined", function(){
     expect(createTree()).toBeDefined();
   });
 
-  xit("should return tree with age 0 when created", function(){
+  it("should return tree with age 0 when created", function(){
     var tree=createTree();
     expect(tree.age).toEqual(0);
   });
