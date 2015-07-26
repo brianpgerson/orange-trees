@@ -24,12 +24,5 @@ function grow(){
 	console.log(this);
 }
 
-function dropOrange(){
-	return orange;
-}
 
-function createOrange(){
-	return {
-		diameter: (Math.ceil(Math.random() * 10)),
-	}
 }
