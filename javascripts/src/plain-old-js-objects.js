@@ -31,6 +31,7 @@ function grow(){
 }
 
 function dropOrange(){
+	this.orangeCount--;
 	return this.oranges.shift();
 }
 

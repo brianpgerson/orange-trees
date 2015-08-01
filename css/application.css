@@ -14,7 +14,9 @@
   border: solid black 2px;
 }
 
-#orange-tree-template { display: none; }
+#hide { display: none; }
+
+#show { display: block; }
 
 
 /* Add more styles here*/
