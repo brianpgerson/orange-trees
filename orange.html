@@ -8,28 +8,32 @@
 
   <script src="javascripts/vendor/jquery.min.js"></script>
   <script src="javascripts/src/typed-js-objects.js"></script>
+  <script src="javascripts/src/controller.js"></script>
   <script src="javascripts/src/view.js"></script>
   <script src="javascripts/application.js"></script>
 </head>
 <body>
-<header>
-  Welcome to Orange Trees
-</header>
+  <header>
+    Welcome to Orange Trees
+  </header>
 
-<div class="grove">
-  <button id="plant">Plant Orange Tree</button>
-</div>
-
-<div id="tree">
-  <div class="orange-tree" id = "hide">
-    <h2 id = "treeName">Tree Name</h2>
-    <p class="age">0</p>
-    <p class="fruit-count">0</p>
-    <button id="pick">Pick!</button>
-    <button id="age">Age!</button>
-    <div class="display-tree-small"><div>
+  <div class="grove">
+    <button id="plant">Plant Orange Tree</button>
   </div>
-</div>
 
-</body>
-</html>
+  <div id="tree">
+    <div class="orange-tree" id = "hide">
+      <h2 id = "treeName">Tree Name</h2>
+      <p class="age">0</p>
+      <p class="fruit-count">0</p>
+      <button id="pick">Pick!</button>
+      <button id="age">Age!</button>
+        <div class="display-tree-big">      
+          <div id ="orange-overlay">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  </html>

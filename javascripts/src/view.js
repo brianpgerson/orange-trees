@@ -22,27 +22,12 @@ View.prototype.plantTree = function(){
 	document.getElementById("plant").setAttribute("id", "hide");
 }
 
-//========================
-// Controller shiza
-//========================
-
-function Controller(view, tree){
-	this.view = view;
-	this.tree = tree;
+View.prototype.addOrangeToTree = function(){
+	var randoMargin = Math.floor(Math.random() * (500 - 1) + 1);
+	document.getElementById("orange-overlay").innerHTML += "<div class='orange' style='margin: "+ randoMargin+ "px;'> </div>";
 }
 
-Controller.prototype.nameTree = function(){
-    var tree = prompt("Please enter your name", "Enter Here");
-       if (tree != null) {
-       	this.view.nameTree(tree);
-		this.tree.set("name", tree);	
-		console.log(tree);	
-    }
-}
+View.prototype.removeOrangeFromTree = function(){
 
-Controller.prototype.bindEventListeners = function(){
-	document.getElementById("plant").addEventListener("click", this.nameTree.bind(this), false);	
-	document.getElementById("age").addEventListener("click", this.tree.grow.bind(this.tree), false);	
-	document.getElementById("pick").addEventListener("click", this.tree.dropOrange.bind(this.tree), false);	
 }
 
