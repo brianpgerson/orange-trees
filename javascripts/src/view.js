@@ -22,6 +22,9 @@ View.prototype.plantTree = function(){
 	document.getElementById("plant").setAttribute("id", "hide");
 }
 
+//========================
+// Controller shiza
+//========================
 
 function Controller(view, tree){
 	this.view = view;
@@ -32,9 +35,14 @@ Controller.prototype.nameTree = function(){
     var tree = prompt("Please enter your name", "Enter Here");
        if (tree != null) {
        	this.view.nameTree(tree);
+		this.tree.set("name", tree);	
+		console.log(tree);	
     }
 }
 
 Controller.prototype.bindEventListeners = function(){
 	document.getElementById("plant").addEventListener("click", this.nameTree.bind(this), false);	
+	document.getElementById("age").addEventListener("click", this.tree.grow.bind(this.tree), false);	
+	document.getElementById("pick").addEventListener("click", this.tree.dropOrange.bind(this.tree), false);	
 }
+

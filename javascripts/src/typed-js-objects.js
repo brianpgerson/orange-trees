@@ -8,11 +8,16 @@ function createTree(){
 }
 
 function Tree(){
+	this.name = "";
 	this.age = 0;
 	this.height = 0;
 	this.oranges = [];
 	this.orangeCount = this.oranges.length;
 	this.isAlive = 1;
+}
+
+Tree.prototype.set = function(key, newValue){
+	this[key] = newValue;
 }
 
 Tree.prototype.grow = function(){
