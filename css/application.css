@@ -18,14 +18,17 @@
   overflow: visible;
 }
 
+#orange-overlay {
+  width: 1000px;
+  height: 1000px;
+  overflow: hidden;
+}
+
 
 
 .orange {
-  background: url('../images/orange.gif');
-  height: 100px;
-  width: 100px;
   z-index: 1;
-  position: relative;
+  position: absolute;
   float: left;
 }
 
